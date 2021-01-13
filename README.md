@@ -11,6 +11,9 @@ The data was obtained from a url in a CSV format to an Azure TabularDataset obje
 
 Next, the data is then seprated into test and train sets, with a degree of 20% for the test, and the 80% for train. The Logistic Rregression was utilized from the Scikit-learn pipeline, and the hyperparameters tuned were the Regularization Strength and the Maximum Number of Iterations. 
 
+**Benefits of Random sampler you chosen**
+I chose Random sampling because it supports discrete and continuous hyperparameters. It supports early termination of low-performance runs. Some users do an initial search with random sampling and then refine the search space to improve results.
+
 The Parameter Sampler chosen is the Random Sampler that returns sporadic characteristics on a described pursuit space. This procedure is faster, but does not give a better result un-like the Grid Sampler. The Regularization Strength was planned with uniform inspecting, which gives a value reliably dispersed between the base and most extraordinary likely characteristics. It's the most major and safe limit looking at system for incessant components. The Maximum Number of Iterations will be a choice among values some place in the scope of 1 and 1000, with no genuine discrete hyperparameter spread. We should not view this variable as constant. 
 
 The stopping approach chosen was the BanditPolicy, which is a way to exit the process subject to a breathing space factor and evaluation length, it ends when the exactness of a run isn't inside the slack total diverged from the best performing run. It's a less moderate course of action that will be sufficient for our examinations.
@@ -24,6 +27,8 @@ Customarily, pipelines include for the time being cluster handling, for example 
 The accompanying graph shows a ML pipeline applied to a constant business issue where highlights and expectations are time delicate (for example Netflix's proposal motors, Uber's appearance time assessment, LinkedIn's associations recommendations, Airbnb's web crawlers and so on)
 
 Parameter Sampling/Boundary inspecting is utilized in an AI gathering calculation called bootstrap collecting (additionally called stowing). It helps in keeping away from overfitting and improves the strength of AI calculations. 
+
+In random sampling, hyperparameter values are randomly selected from the defined search space.
 
 In packing, a specific number of similarly estimated subsets of a dataset are removed with substitution. At that point, an AI calculation is applied to every one of these subsets and the yields are ensembled.
 
